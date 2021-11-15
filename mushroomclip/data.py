@@ -8,6 +8,7 @@ from skimage.color import gray2rgb
 
 from dataclasses import dataclass
 from datetime import datetime
+from itertools import combinations
 from pathlib import Path
 from random import randint
 from typing import Dict
