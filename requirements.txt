@@ -1,6 +1,7 @@
 pandas
 scikit-image
 ftfy
+typer
 #torch
 #torchvision
 #transformers
