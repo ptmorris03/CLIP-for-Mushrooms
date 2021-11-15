@@ -28,6 +28,7 @@ class CLIPMushroomTrainer(Trainer):
         logits_te = outputs.get("logits_per_text")
 
         def loss_fn(logits, target):
+            print(target.shape)
             logprobs = F.log_softmax(logits, dim=1)
             loss = - torch.sum(target * logprobs, dim=1)
             return torch.mean(loss)
