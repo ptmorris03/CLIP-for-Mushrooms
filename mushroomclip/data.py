@@ -19,6 +19,9 @@ def clean_data(data):
 
 
 def split_dataset(data, split_date):
+    if type(split_date) == datetime:
+        split_date = split_date.strftime("%Y-%m-%d")
+        
     before = data[data['created'] < split_date]
     after = data[data['created'] >= split_date]
 
