@@ -10,6 +10,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from random import randint
+from typing import Dict
 
 
 def clean_data(data):
@@ -24,7 +25,7 @@ def split_dataset(data, split_date):
     return before, after
 
 
-def load_data(tsv_path: Path, split_date: datetime) -> dict[str, pd.DataFrame]:
+def load_data(tsv_path: Path, split_date: datetime) -> Dict[str, pd.DataFrame]:
     data = pd.read_csv(tsv_path, delimiter='\t', header=0)
 
     data = clean_data(data)
