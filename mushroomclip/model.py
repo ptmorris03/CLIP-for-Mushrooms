@@ -5,9 +5,10 @@ import torch.nn.functional as F
 
 from os import cpu_count
 from pathlib import Path
+from typing import Tuple
 
 
-def load_model(name: str = "") -> tuple[CLIPModel, CLIPProcessor]:
+def load_model(name: str = "") -> Tuple[CLIPModel, CLIPProcessor]:
     default_name = "openai/clip-vit-base-patch32"
     if name is None or len(name) == 0:
         name = default_name
