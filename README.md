@@ -13,5 +13,6 @@ Finetuning OpenAI's CLIP to match images of mushrooms/fungi with their species/g
 - Thank you to [mushroomobserver.org](mushroomobserver.org) for making this data available. 
 
 
-### Setup
+### Setup and Use
+- Install docker with GPU support, then modify and run `docker_train.sh`
 - If not using Docker, install [PyTorch and Torchvision](https://pytorch.org/) and the [HuggingFace Transformers](https://huggingface.co/transformers/) libraries with GPU support.
