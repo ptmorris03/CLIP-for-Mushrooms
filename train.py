@@ -43,7 +43,10 @@ def train(
         train_dataset=trainset,
         eval_dataset=testset
     )
-    trainer.train(resume_from_checkpoint=resume)
+    if resume:
+        trainer.train(str(checkpoint_dir))
+    else:
+        trainer.train()
 
 
 if __name__ == "__main__":
