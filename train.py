@@ -13,7 +13,7 @@ def train(
     batch_size: int = 128,
     accum_steps: int = 10,
     learning_rate: float = 5e-05,
-    epochs: int = 10,
+    epochs: int = 20,
     resume: bool = False,
     save_every: int = 100,
     log_every: int = 10,
