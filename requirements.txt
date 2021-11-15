@@ -1,0 +1,6 @@
+pandas
+scikit-image
+ftfy
+#torch
+#torchvision
+#transformers

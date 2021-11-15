@@ -11,3 +11,7 @@ Finetuning OpenAI's CLIP to match images of mushrooms/fungi with their species/g
 - [Repository for downloading from scratch](https://github.com/pmorris2012/download-mushroomobserver)
 
 - Thank you to [mushroomobserver.org](mushroomobserver.org) for making this data available. 
+
+
+### Setup
+- If not using Docker, install [PyTorch and Torchvision](https://pytorch.org/) and the [HuggingFace Transformers](https://huggingface.co/transformers/) libraries with GPU support.
